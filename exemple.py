@@ -1,8 +1,10 @@
 #mon premier fichier code
 
-print("hello world")
+print("hello world!")
 
 
 import pandas as pd
 
-pd.read_csv('monfichier.csv')
+df = pd.read_csv('monfichier.csv', sep=',')
+
+df.info()
